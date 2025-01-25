@@ -1,3 +1,2 @@
-console.log("Hello world!");
-
-console.log("new line");
+console.log('hello world');
+console.log('connect to github');
