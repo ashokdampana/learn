@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #6a0dad; /* Vibrant purple for modern design */
+    --secondary-color: #f8f9fa; /* Light background for contrast */
+    --accent-color: #808080; /* Accent color for buttons or highlights */
+    --text-color: #333333; /* Dark gray for readability */
+    --font-family: 'Segoe UI', sans-serif; /* Clean, modern font */
+    --transition-speed: 0.5s;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Align header, main, footer in a stack */
+    font-family: var(--font-family); /* Modern, professional font */
+    background: var(--secondary-color); /* Soft background */
+    color: var(--text-color);
+}
+
+header {
+    background: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for elegance */
+    position: sticky; /* Sticks to top while scrolling */
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: color var(--transition-speed);
+}
+
+header h1:hover {
+    color: var(--accent-color); /* Adds vibrancy on hover */
+    text-shadow: 1px 1px 2px var(--primary-color); /* Adds depth */
+}
+
+header nav {
+    display: flex;
+    gap: 20px; /* Modern spacing between items */
+}
+
+header nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-color);
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all var(--transition-speed);
+}
+
+header nav a:hover {
+    background: var(--primary-color);
+    color: white;
+}
+main {
+    display: flex; /* Enables flexbox */
+    flex-wrap: wrap; /* Allows wrapping to the next row if needed */
+    justify-content: center; /* Aligns items horizontally in the center */
+    gap: 20px; /* Adds spacing between articles */
+    padding: 20px;
+}
+
+main article {
+    border: 1px solid var(--primary-color);
+    max-width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for elegance */
+    transition: all var(--transition-speed);
+}
+
+main article h3 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+main article:hover {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Adds depth on hover */
+}
+
+
+footer {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    margin-top: auto; /* Pushes footer to the bottom */
+    border-top: 3px solid var(--accent-color); /* Modern detail */
+}
+
+footer p {
+    margin: 0;
+    font-style: italic;
+}
